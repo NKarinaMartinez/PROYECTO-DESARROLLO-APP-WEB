@@ -24,16 +24,16 @@
                     <h3>Encuentranos en:</h3>
                     <div id="redes">
                         <div class="img-f">
-                            <a href="https://www.facebook.com/"><img src="media/facebook.png" alt="facebook"></a>
+                            <a href="https://www.facebook.com/"><img src="../../assets/media/facebook.png" alt="facebook"></a>
                         </div>
                         <div class="img-f">
-                            <a href="https://www.instagram.com/"><img src="media/instagram.png" alt="instagram"></a>
+                            <a href="https://www.instagram.com/"><img src="../../assets/media/instagram.png" alt="instagram"></a>
                         </div>
                         <div class="img-f">
-                            <a href="https://twitter.com/"><img src="media/twitter.png" alt="twitter"></a>
+                            <a href="https://twitter.com/"><img src="../../assets/media/twitter.png" alt="twitter"></a>
                         </div>
                         <div class="img-f">
-                            <a href="https://www.youtube.com/"><img src="media/youtube.png" alt="youtube"></a>
+                            <a href="https://www.youtube.com/"><img src="../../assets/media/youtube.png" alt="youtube"></a>
                         </div>
                     </div>
                 </div>

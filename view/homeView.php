@@ -1,10 +1,10 @@
 <?php
-require_once 'view/templates/header.php';
+require_once HEADER;
 ?>
 
 		<div class="contenedor">
 			<div class="centrar">
-				<div class="imagen" style="background-image: linear-gradient(rgba(5,7,12,0.50),rgba(5,7,12,0.50)), url('media/chimborazo.jpg');">
+				<div class="imagen" style="background-image: linear-gradient(rgba(5,7,12,0.50),rgba(5,7,12,0.50)), url('../assets/media/chimborazo.jpg');">
 					<div style="text-align: center;">
 						<div style="color: rgb(245, 248, 248);">
 							<span style="font-size: 60px;">Bienvenido a DreamTravel</span>
@@ -25,7 +25,7 @@ require_once 'view/templates/header.php';
 			<div class="contenedor">
 				<div style="text-align: center;">
 					<div class="centrar;" style="color: rgb(245, 248, 248)">
-						<div class="imagen" style="background-image: linear-gradient(rgba(5,7,12,0.50),rgba(5,7,12,0.50)), url(media/actividades.jpg);">									
+						<div class="imagen" style="background-image: linear-gradient(rgba(5,7,12,0.50),rgba(5,7,12,0.50)), url(../assets/media/actividades.jpg);">									
 							<div>
 								<h3 style="font-size: 60px;">Actividades</h3>
 								<p style="font-size: 28px;">Cada lugar turísticos ofrece sus respectivas actividades para la distraccción de los turistas</p>
@@ -35,7 +35,7 @@ require_once 'view/templates/header.php';
 						  
 					</div><br>
 					<div class="centrar;" style="color: rgb(245, 248, 248)">
-						<div class="imagen" style="background-image: linear-gradient(rgba(5,7,12,0.50),rgba(5,7,12,0.50)), url(media/arreglos\ de\ viaje.jpg);">
+						<div class="imagen" style="background-image: linear-gradient(rgba(5,7,12,0.50),rgba(5,7,12,0.50)), url(../assets/media/arreglos\ de\ viaje.jpg);">
 							<div>
 								<h3 style="font-size: 60px;">Arreglos de viaje</h3>
 								<p style="font-size: 28px;">Elije tu mejor destino a precios económicos y personalizados</p>
@@ -43,7 +43,7 @@ require_once 'view/templates/header.php';
 						</div>    
 					</div><br>
 					<div class="centrar;" style="color: rgb(245, 248, 248)">
-						<div class="imagen" style="background-image: linear-gradient(rgba(5,7,12,0.50),rgba(5,7,12,0.50)), url(media/guia\ turistico.jpg);">
+						<div class="imagen" style="background-image: linear-gradient(rgba(5,7,12,0.50),rgba(5,7,12,0.50)), url(../assets/media/guia\ turistico.jpg);">
 							<div>
 								<h3 style="font-size: 60px;">Guías Turísticos</h3>
 								<p style="font-size: 28px;">Contamos con los mejores profesionale con aptitudes específicas para planificar la recepción, coordinación, orientación, etc., de todos los turistas</p>
@@ -51,7 +51,7 @@ require_once 'view/templates/header.php';
 						</div>      
 					</div><br>
 					<div class="centrar;" style="color: rgb(245, 248, 248)">
-						<div class="imagen" style="background-image: linear-gradient(rgba(5,7,12,0.50),rgba(5,7,12,0.50)), url(media/destinos.jpg);">
+						<div class="imagen" style="background-image: linear-gradient(rgba(5,7,12,0.50),rgba(5,7,12,0.50)), url(../assets/media/destinos.jpg);">
 							<div >
 								<h3 style="font-size: 60px;">Destinos</h3>
 								<p style="font-size: 28px;">Disponemos de los mejores lugares turísticos totalmente a la disposición de nuestros clientes</p>
@@ -72,5 +72,5 @@ require_once 'view/templates/header.php';
 		</section>
 
 <?php 
-require_once 'view/templates/footer.php';
+require_once FOOTER;
 ?>

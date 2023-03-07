@@ -1,6 +1,6 @@
 <?php
 class Boleto{
-    private $id, $nombre, $precio, $estado, $descripcion, $usuario, $fechaActualizacion;
+    private $id, $nombre, $precio, $idCategoria, $estado, $descripcion, $usuario, $fechaActualizacion;
 
     function __construct(){
 
@@ -14,54 +14,60 @@ class Boleto{
         $this->id = $id;
     }
 
-    function get(){
+    function getNombre(){
         return $this->nombre;
     }
 
-    function set($nombre){
+    function setNombre($nombre){
         $this->nombre = $nombre;
     }
 
-    function get(){
+    function getPrecio(){
         return $this->precio;
     }
 
-    function set($precio){
+    function setPrecio($precio){
         $this->precio = $precio;
     }
 
-    function get(){
+    function getIdCategoria(){
+        return $this->idCategoria;
+    }
+
+    function setIdCategoria($idCategoria){
+        $this->idCategoria = $idCategoria;
+    }
+
+    function getEstado(){
         return $this->estado;
     }
 
-    function set($estado){
+    function setEstado($estado){
         $this->estado = $estado;
     }
 
-    function get(){
+    function getDescripcion(){
         return $this->descripcion;
     }
 
-    function set($descripcion){
+    function setDescripcion($descripcion){
         $this->descripcion = $descripcion;
     }
 
-    function get(){
+    function getUsuario(){
         return $this->usuario;
     }
 
-    function set($usuario){
+    function setUsuario($usuario){
         $this->usuario = $usuario;
     }
 
-    function get(){
+    function getFechaActualizacion(){
         return $this->fechaActualizacion;
     }
 
-    function set($fechaActualizacion){
+    function setFechaActualizacion($fechaActualizacion){
         $this->fechaActualizacion = $fechaActualizacion;
     }
-
-    
 }
 ?>
