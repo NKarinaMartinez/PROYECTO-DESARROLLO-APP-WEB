@@ -5,7 +5,9 @@
     <meta name="autor" content="Nicole Karina Martínez Ochoa">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="assets/css/styles.css" rel="stylesheet">
+    <!-- <link href="assets/css/styles.css" rel="stylesheet"> -->
+    <!-- <link href="assets/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="assets/css/boot.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,200;1,500&display=swap" rel="stylesheet">
@@ -16,9 +18,26 @@
     <header>
         <h1>DreamTravel</h1>
     </header>
-    <nav>
+    <nav class="nav1">
         <a href="index.php" class="nav-link">Inicio</a>
         <a href="index.php?c=boletos&f=index" class="nav-link">Destino</a>
-        <a href="hospedaje.html" class="nav-link">Hospedaje</a>
+        <a href="" class="nav-link">Hospedaje</a>
+        <a href="#" class="nav-login"><i class="fa-solid fa-user"></i></a>
     </nav>
 </div>
+
+<?php
+    if (!isset($_SESSION)) {
+        session_start();
+    };
+    if (!empty($_SESSION['mensaje'])) {
+        ?>
+        <div class="mt-2 alert alert-<?php echo $_SESSION['color']; ?>
+            alert-dismissible fade show" role="alert">
+            <?php echo $_SESSION['mensaje']; ?>  
+        </div>
+        <?php
+        unset($_SESSION['mensaje']);
+        unset($_SESSION['color']);
+    }//end if 
+?>

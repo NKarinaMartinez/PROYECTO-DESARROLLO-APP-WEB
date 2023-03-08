@@ -1,5 +1,6 @@
 <?php
 require_once 'model/dao/BoletoDAO.php';
+require_once 'model/dao/CategoriasDAO.php';
 require_once 'model/dto/Boleto.php';
 
 class BoletosController {
@@ -14,7 +15,7 @@ class BoletosController {
         //comunica con el modelo (enviar datos o obtener datos)
         $resultados = $this->model->selectAll("");
         // comunicarnos a la vista
-        $titulo="Buscar productos";
+        $titulo="Buscar boletos";
         require_once 'view/boletos/boletos.'.'list.php';
     }
 
@@ -41,9 +42,9 @@ class BoletosController {
 
     // lee datos del formulario de nuevo producto y lo inserta en la bdd (llamando al modelo)
     public function new() {
-      //cuando la solicitud es por post
+        //cuando la solicitud es por post
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {// insertar el producto
-            // considerar verificaciones
+            //considerar verificaciones
             //if(!isset($_POST['codigo'])){ // redireccionar header('');}
             $bol = new Boleto();
             // lectura de parametros
@@ -71,12 +72,12 @@ class BoletosController {
             $_SESSION['mensaje'] = $msj;
             $_SESSION['color'] = $color;
             //llamar a la vista
-            header('Location:index.php?c=Boletos&f=index');
+            header('Location:index.php?c=boletos&f=index');
         } 
     }
   
     public function delete(){
-      //leeer parametros
+        //leeer parametros
         $bol = new Boleto();
         $bol->setId(htmlentities($_REQUEST['id']));
         $bol->setUsuario('usuario'); //$_SESSION['usuario'];
@@ -95,11 +96,11 @@ class BoletosController {
         $_SESSION['mensaje'] = $msj;
         $_SESSION['color'] = $color;
         //llamar a la vista
-        header('Location:index.php?c=productos&f=index');
+        header('Location:index.php?c=boletos&f=index');
   }
 
 
-   // muestra el formulario de editar producto
+    // muestra el formulario de editar producto
     public function view_edit(){
         //leer parametro
         $id= $_REQUEST['id']; // verificar, limpiar
@@ -112,15 +113,15 @@ class BoletosController {
         // comunicarse con la vista
         $titulo="Editar producto";
         require_once 'view/boletos/boletos.'.'edit.php';
-  }
+    }
 
-   // lee datos del formulario de editar producto y lo actualiza en la bdd (llamando al modelo)
-   public function edit(){
+    // lee datos del formulario de editar producto y lo actualiza en la bdd (llamando al modelo)
+    public function edit(){
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {// actualizar
             // verificaciones
             //if(!isset($_POST['codigo'])){ header('');}
             // leer parametros
-            $bol = new Producto();
+            $bol = new Boleto();
             $bol->setId(htmlentities($_POST['id']));
             $bol->setNombre(htmlentities($_POST['nombre']));
             $bol->setPrecio(htmlentities($_POST['precio']));
@@ -144,7 +145,7 @@ class BoletosController {
             $_SESSION['mensaje'] = $msj;
             $_SESSION['color'] = $color;
             //llamar a la vista
-            header('Location:index.php?c=productos&f=index');
+            header('Location:index.php?c=boletos&f=index');
         } 
     }
 }

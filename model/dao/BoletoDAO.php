@@ -28,7 +28,7 @@ class BoletoDAO{
         $sentencia = $this->con->prepare($sql);
         $data = ['id' => $id];
         $sentencia->execute($data);
-        $resultados = $sentencia->fechAll(PDO::FETCH_ASSOC);
+        $resultados = $sentencia->fetch(PDO::FETCH_ASSOC);
         return $resultados;
     }
 

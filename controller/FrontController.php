@@ -5,7 +5,7 @@ class FrontController {
     public function ruteo() {
         // leer parametros
         $controlador = (!empty($_REQUEST['c']))?htmlentities($_REQUEST['c']):CONTROLADOR_PRINCIPAL;
-               // productos
+        // productos
         $controlador = ucwords(strtolower($controlador))."Controller";
          //ProductosController
         $funcion = (!empty($_REQUEST['f']))?htmlentities($_REQUEST['f']):FUNCION_PRINCIPAL;
