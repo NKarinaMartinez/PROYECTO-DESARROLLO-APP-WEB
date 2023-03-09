@@ -201,7 +201,7 @@ text-align: center;
     margin-right:auto;
     margin-left:auto;
 }
-/*@media (min-width:576px){
+@media (min-width:576px){
     .container{max-width:540px}}
 @media (min-width:768px){
     .container{max-width:720px}}
@@ -215,7 +215,7 @@ text-align: center;
     padding-left:15px;
     margin-right:auto;
     margin-left:auto;
-}*/
+}
 
 /**/
 .tituloB{

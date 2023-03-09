@@ -1,5 +1,6 @@
 <?php
 require_once 'config/conexion.php';
+require_once 'model/validacion.php';
 
 class BoletoDAO{
     private $con;
@@ -9,11 +10,13 @@ class BoletoDAO{
     }
 
     public function selectAll($parametro){
+        $val = new validacion();
+        $parClean = $val->clean_input($parametro);
         $sql = "SELECT * FROM boleto, categoria where bol_idCategoria = cat_id and 
         (bol_nombre like :b1 or cat_nombre like :b2) and bol_estado=1";
         $sentencia = $this->con->prepare($sql);
         // preparar la sentencia
-        $conlike = '%' . $parametro . '%';
+        $conlike = '%' . $parClean . '%';
         $data = array('b1' => $conlike, 'b2' => $conlike);
         // ejecutar la sentencia
         $sentencia->execute($data);
@@ -24,9 +27,11 @@ class BoletoDAO{
     }
 
     public function selectOne($id){
+        $val = new validacion();
+        $parClean = $val->clean_input($id);
         $sql = "SELECT * FROM boleto WHERE bol_id=:id";
         $sentencia = $this->con->prepare($sql);
-        $data = ['id' => $id];
+        $data = ['id' => $parClean];
         $sentencia->execute($data);
         $resultados = $sentencia->fetch(PDO::FETCH_ASSOC);
         return $resultados;
@@ -34,6 +39,8 @@ class BoletoDAO{
 
     public function insert($bol){
         try {
+            $val = new validacion();
+            $parClean = $val->clean_input($bol);
             //sentencia sql
             $sql = "INSERT INTO boleto (bol_nombre, bol_estado, bol_precio, 
             bol_idCategoria, bol_usuarioActualizacion, bol_fechaActualizacion) VALUES 
@@ -63,6 +70,8 @@ class BoletoDAO{
 
     public function update($bol){
         try{
+            $val = new validacion();
+            $parClean = $val->clean_input($bol);
             //sentencia sql
             $sql = "UPDATE boleto SET bol_nombre=:nom," .
                     "bol_estado=:estado,bol_precio=:precio,bol_idCategoria=:idCat,bol_usuarioActualizacion=:usu," .
@@ -94,6 +103,8 @@ class BoletoDAO{
 
     public function delete($bol){
         try{
+            $val = new validacion();
+            $parClean = $val->clean_input($bol);
             //prepare
             $sql = "UPDATE boleto SET bol_estado=0,bol_usuarioActualizacion=:usu," .
             "bol_fechaActualizacion=:fecha WHERE bol_id=:id";
