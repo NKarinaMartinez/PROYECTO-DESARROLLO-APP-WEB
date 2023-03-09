@@ -39,8 +39,6 @@ class BoletoDAO{
 
     public function insert($bol){
         try {
-            $val = new validacion();
-            $parClean = $val->clean_input($bol);
             //sentencia sql
             $sql = "INSERT INTO boleto (bol_nombre, bol_estado, bol_precio, 
             bol_idCategoria, bol_usuarioActualizacion, bol_fechaActualizacion) VALUES 
@@ -70,8 +68,6 @@ class BoletoDAO{
 
     public function update($bol){
         try{
-            $val = new validacion();
-            $parClean = $val->clean_input($bol);
             //sentencia sql
             $sql = "UPDATE boleto SET bol_nombre=:nom," .
                     "bol_estado=:estado,bol_precio=:precio,bol_idCategoria=:idCat,bol_usuarioActualizacion=:usu," .
@@ -103,8 +99,6 @@ class BoletoDAO{
 
     public function delete($bol){
         try{
-            $val = new validacion();
-            $parClean = $val->clean_input($bol);
             //prepare
             $sql = "UPDATE boleto SET bol_estado=0,bol_usuarioActualizacion=:usu," .
             "bol_fechaActualizacion=:fecha WHERE bol_id=:id";
