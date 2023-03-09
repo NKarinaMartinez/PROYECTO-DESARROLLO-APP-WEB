@@ -1,4 +1,5 @@
 <?php
+//autor:Nicole Martínez Ochoa
 class Boleto{
     private $id, $nombre, $precio, $idCategoria, $estado, $descripcion, $usuario, $fechaActualizacion;
 

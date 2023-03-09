@@ -1,5 +1,5 @@
 <?php
-
+//autor:Nicole Martínez Ochoa
 class IndexController {
     
     public function index(){

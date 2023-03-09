@@ -1,4 +1,5 @@
 <?php
+//autor:Nicole Martínez Ochoa
 require_once 'config/Conexion.php';
 
 class CategoriasDAO {

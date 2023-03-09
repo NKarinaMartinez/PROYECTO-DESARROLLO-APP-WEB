@@ -1,4 +1,5 @@
 <?php
+//autor:Nicole Martínez Ochoa
 class Conexion {
     public static function getConexion(){
         $conexion = null;

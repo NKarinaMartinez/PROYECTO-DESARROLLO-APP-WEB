@@ -1,3 +1,4 @@
+<!-- autor:Nicole Martínez Ochoa -->
 <!--Footer de la página-->
 <footer>
         <div>

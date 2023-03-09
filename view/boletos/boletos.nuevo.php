@@ -1,4 +1,7 @@
-<?php require_once HEADER; ?>
+<!-- autor:Nicole Martínez Ochoa -->
+<?php 
+require_once HEADER; 
+?>
 
 <div class="container">
 <h2> <?php echo $titulo?></h2>

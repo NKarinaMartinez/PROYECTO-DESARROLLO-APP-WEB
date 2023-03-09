@@ -1,4 +1,5 @@
 <?php
+//autor:Nicole Martínez Ochoa
 require_once 'config/conexion.php';
 require_once 'model/validacion.php';
 

@@ -1,5 +1,5 @@
 <?php
-
+//autor:Nicole Martínez Ochoa
 class Categoria{
     private $id, $nombre, $descripcion, $estado, $usuario, $fechaActualizacion;
 

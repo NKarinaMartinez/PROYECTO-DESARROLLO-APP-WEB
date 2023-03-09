@@ -1,5 +1,5 @@
 <?php
-
+//autor:Nicole Martínez Ochoa
 require_once 'config/config.php';
 class FrontController {
     public function ruteo() {
