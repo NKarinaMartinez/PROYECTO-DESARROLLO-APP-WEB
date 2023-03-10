@@ -5,13 +5,13 @@ require_once HEADER;
 
 <div class="container">
 <h2> <?php echo $titulo?></h2>
-    <div class="row">
+    <div class="card-bodyH">
         <!-- <div class="sub-card"> -->
             <form action="index.php?c=Hotel&f=new" method="POST" name="formProdNuevo" id="formProdNuevo">
                 <div class="form-row ">
-                    <div class="form-group col-sm-12 col-new">
+                    <div class="form-group col-sm-6 col-new">
                         <label for="nomb">Nombre</label>
-                        <input type="text" name="nomb" id="nombre" class="form-control" placeholder="Ingrese nombre" style="width: 880px" required>
+                        <input type="text" name="nomb" id="nombre" class="form-control" placeholder="Ingrese nombre" required>
                     </div>
 
                     <div class="form-group col-sm-6 col-new">
@@ -34,7 +34,7 @@ require_once HEADER;
                         <input type="Double" name="VN" id="ValorNoche" class="form-control" placeholder="Ingrese Valor por Noche" required>
                     </div>
 
-                    <div class="form-group col-sm-12 col-new">
+                    <div class="form-group col-sm-6 col-new">
                         <label for="estrellas">Estrellas</label>
                         <input type="int" name="estrella" id="estrella" class="form-control" placeholder="Ingrese Estrellas" required>
                     </div>

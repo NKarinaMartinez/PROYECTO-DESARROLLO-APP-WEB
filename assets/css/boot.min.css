@@ -286,28 +286,32 @@ img{
 }
 
 .titu1{
-position: relative;
-color: rgb(46, 46, 116);
-text-align: center;
-margin-top: 90px;
-font-size: 2rem;
+    position: relative;
+    color: rgb(46, 46, 116);
+    text-align: center;
+    margin-top: 90px;
+    font-size: 2rem;
 }
 
 .titu2{
     position: relative;
     color: rgb(46, 46, 116);
     text-align: center;
-    font-size: 20px;
+    font-size: 2rem;
 } 
-
+/*-----------------------------------------------------------------------------*/
+.contenedor-info{
+    width: 60%;
+    height: 160px;
+}
 .mas-info{
-width: 60%;
-height: 160px;
-background-color: rgb(240, 103, 23);
-margin: auto;
-padding: 20px 60px;
-border-radius: 25px;
-text-align: center;
+    width: 700px;
+    height: 160px;
+    background-color: rgb(240, 103, 23);
+    margin: auto;
+    padding: 20px 40px;
+    border-radius: 25px;
+    text-align: center;
 }
 .mas-inf h4, .mas-inf p{
     color: #ffff;
@@ -394,44 +398,60 @@ text-align: center;
     margin-left: 300px;
 }
 
-/*Tabla*/
+/*Tablas*/
 .table-responsive{
     display: flex;
     text-align: center;
     justify-content: center;
 }
-.table{
+/*.table{
     width: cal(80%-375px);
+}*/
+.table{
+    width: cal(90%-375px);
 }
-thead{
+.thead-dark{
     background: #f0f0f0;
     box-shadow: 0px 10px 23px -6px rgb(0 0 0 / 11%);
 }
 th{
-    padding: 10px 35px;
+    padding: 10px 15px;
     box-shadow: 0px 10px 23px -8px rgb(0 0 0 / 11%);
     /*border: 0.1px solid #696969;*/
 }
+.fila1N{
+    max-width: 310px;
+}
 tbody>tr>td{
-    padding: 10px 35px;
+    padding: 10px 15px;
     text-align: center;
     border: 1px solid #c0c0c0;
 }
 
 /*Acciones*/
 td>.btn-primary{
+    font-size: 12px;
     background: #2253d8;
-    padding: 6px 18px;
+    padding: 6px 12px;
 }
 td>.btn-danger{
+    font-size: 12px;
     background: #c72424;
-    padding: 6px 18px;
+    padding: 6px 12px;
 }
 
-/*Nuevo Boleto*/
+/*Plantilla para Agregar un nuevo elemento*/
 .card{
     width: 80%;
     height: 260px;
+    border: 0.1px solid #c0c0c0;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.card-bodyH{
+    width: 80%;
+    height: 340px;
     border: 0.1px solid #c0c0c0;
     border-radius: 10px;
     padding: 15px;
@@ -468,7 +488,7 @@ td>.btn-danger{
     background: #712da8;
     color: #ffffff;
     border: none;
-    margin: 0 15px;
+    margin: 6px 15px 0 4px;
 }
 
 /*Parte de la pagina estatica Destinos*/
@@ -501,12 +521,19 @@ td>.btn-danger{
     display: inline-block;
     margin: 40px;
 }
+
 .imagenDes{
-    width: 360px;
+    width: 350px;
     height: 250px;
 }
 .descripcion{
     height: 90px;
+    width: 350px;
+    padding: 5px;
+    box-shadow: 0px 10px 23px -8px rgb(0 0 0 / 30%);
+}
+.descripcionHot{
+    height: 160px;
     width: 350px;
     padding: 5px;
     box-shadow: 0px 10px 23px -8px rgb(0 0 0 / 30%);
@@ -618,15 +645,8 @@ td>.btn-danger{
 }
 
 .imagenHotel{
-    width: 340px;
+    width: 350px;
     height: 250px;
-}
-
-.descripcion{
-    height: 160px;
-    width: 330px;
-    padding: 5px;
-    box-shadow: 0px 10px 23px -8px rgb(0 0 0 / 30%);
 }
 
 .NombreD{
@@ -665,3 +685,166 @@ td>.btn-danger{
 .mas-infor{
     text-align: center;
 }
+
+/*Formulario estatico de Destino*/
+.ContPrincipal{
+    width: 70%;
+    height: 730px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 23px 8px rgb(0 0 0 / 11%);
+    margin: 0 auto;
+    margin-top: 25px;
+}
+.tituloDD{
+    background-color: rgb(65, 5, 175);
+    border-radius: 10px 10px 0 0;
+}
+.tituloDD>header>h2{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color: #ffff;
+    padding: 15px 30px;
+}
+.FormularioDES{
+    padding: 15px 30px;
+}
+.labelNombre{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: rgb(58, 58, 58);
+}
+.entradasDD{
+    width: 200px;
+    height: 26px;
+    padding: 0 10px;
+    border: solid 0.1px rgb(158, 158, 158);
+    border-radius: 0 10px 10px 0;
+}
+.femF, .masF, .otroF{
+    width: 25px;
+    height: 15px;
+}
+.generoR{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 45px;
+}
+.pasajerosF{
+    width: 45px;
+}
+.contF{
+    margin: 10px 0;
+}
+.cont-icon{
+    display: inline-block;
+    vertical-align: top;
+}
+.cont-icon i{
+    border: solid 0.1px rgb(158, 158, 158);
+    padding: 5px 10px;
+    margin-right: -5px;
+    color: rgb(56, 56, 56);
+    vertical-align: top;
+}
+.datos{
+    margin-top: 25px;
+    font-weight: 400;
+    color: rgb(58, 58, 58);
+}
+.comprarF{
+    width: 220px;
+    height: 40px;
+    padding: 10px 0;
+    background-color: rgb(255, 100, 44);
+    border-radius: 10px;
+    border: none;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    color: #ffff;
+    margin: 0 auto;
+    margin-top: 18px;
+}
+.btn-submit{
+    text-align: center;
+    
+}
+.btn-input-sub{
+    width: 180px;
+    height: 40px;
+    background: rgb(236, 110, 20);
+    border: none;
+    border-radius: 50px;
+    color: #f2f2f2;
+}
+.mensajeError{
+    color: red;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/*Formulario estatico de encuesta*/
+.imagen{
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    width: 750px;
+       height: 450px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.img_footer{
+    width: 30px;
+    height: 30px;
+    margin: 10px 15px 0px 0px;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}	
+
+.cuerpo {
+    border-radius:10px; border:  solid rgb(60, 32, 219); font-size: medium; display: inline-block; min-width: auto; background-color: rgb(223, 222, 203);
+    margin-top:D 5px; margin-left: 5px; margin-right: 5px; margin-bottom: 5px; padding: 5px; width: 45%; text-align: center;
+}
+
+.mensajeError{
+    color:rgb(255, 0, 0);
+    font-size: smaller;
+}
+
+.ml1 {
+    font-weight: 900;
+    font-size: 1em;
+}
+
+.ml1 .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+.ml1 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+}
+
+.ml1 .line {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    transform-origin: 0 0;
+}
+
+.ml1 .line1 { top: 0; }
+.ml1 .line2 { bottom: 0; }

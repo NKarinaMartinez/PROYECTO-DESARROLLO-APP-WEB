@@ -136,7 +136,7 @@
     </div>
 </section>
 <section>
-    <div class="mas-inf">
+    <div class="mas-info">
         <h4>Somos la mejor agencia de viajes</h4>
         <p>Podemos llevarte a descubrir un nuevo mundo lleno de travesias increibles</p>
         <button class="btn-ver-mas">Ver más</button>

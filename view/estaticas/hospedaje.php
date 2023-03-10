@@ -1,7 +1,7 @@
 <?php require_once HEADERCLIENTE; ?>
 
-    <p class="tit1 parrafoF"><strong>Con DreamTravel hospédate en los mejores Hoteles de Mundo</strong></p>
-    <p class="tit2 parrafoF">¡Vive unas vacaciones increíbles!</p>
+    <p class="titu1 parrafoF"><strong>Con DreamTravel hospédate en los mejores Hoteles de Mundo</strong></p>
+    <p class="titu2 parrafoF">¡Vive unas vacaciones increíbles!</p>
 
     <!--Hoteles-->
     <div class="container_H">
@@ -14,7 +14,7 @@
                 <div class="imagenHotel">
                     <img src="https://media.staticontent.com/media/pictures/623c3720-a50f-42f3-a4be-e080a885a7f7/300x200" alt="">
                 </div>
-                <div class="descripcion">
+                <div class="descripcionHot">
                     < class="NombreD">Princess Mundo Imperial Riviera Diamante Acapulco</h2>
                     <p class="parrafoF"> Precio por noche con impuestos desde MXN$ 1,800</p>
                     <h4 class="descriptionP"> Acapulco, México. </h4>
@@ -22,10 +22,10 @@
                 </div>
             </div>
             <div class="Hotel">
-                <div class="imageHotel">
+                <div class="imagenHotel">
                     <img src="https://media.staticontent.com/media/pictures/b4726248-6d2f-4769-b40a-d2f121e0e2f3/300x200" alt="">
                 </div>
-                <div class="descripcion">
+                <div class="descripcionHot">
                     <h2 class="NombreD">Melia Puerto Vallarta All Inclusive</h2>
                     <p class="parrafoF"> Precio por noche con impuestos desde MXN$ 4,561</p>
                     <h4 class="descriptionP"> Puerto Vallarta, México  </h4>
@@ -36,7 +36,7 @@
                 <div class="imagenHotel">
                     <img src="https://media.staticontent.com/media/pictures/0458cb71-4667-4867-84f1-d0eaaf429821/300x200" alt="">
                 </div>
-                <div class="descripcion">
+                <div class="descripcionHot">
                     <h2 class="NombreD">California Hotel and Casino</h2>
                     <p class="parrafoF">Precio por noche con impuestos desde MXN$ 1,584</p>
                     <h4 class="descriptionP"> Las Vegas, Estados Unidos </h4>
@@ -61,7 +61,7 @@
                 <div class="imagenHotel">
                     <img src="https://media.staticontent.com/media/pictures/2aaec019-f2c7-478a-a1ca-bf9fe213e94a/853x0?op=NONE&enlarge=false&gravity=ce_0_0&quality=80&dpr=1" alt="">
                 </div>
-                <div class="descripcion">
+                <div class="descripcionHot">
                     <h2 class="NombreD">Dc Suites</h2>
                     <p class="parrafoF"> Superior Double Room 2 noches, 2 personas: USD 74</p>
                     <h4 class="descriptionP"> Guayaquil, Ecuador. </h4>
@@ -72,7 +72,7 @@
                 <div class="imagenHotel">
                     <img src="https://media.staticontent.com/media/pictures/9831d709-7354-452e-a32f-335d4940d466/853x0?op=NONE&enlarge=false&gravity=ce_0_0&quality=80&dpr=1" alt="">
                 </div>
-                <div class="descripcion">
+                <div class="descripcionHot">
                     <h2 class="NombreD">Cotopaxi Tour</h2>
                     <p class="parrafoF">Comfort Studio Suite 4 noches, 2 personas: USD 198</p>
                     <h4 class="descriptionP">Tanicuchi, Ecuador </h4>
@@ -83,7 +83,7 @@
                 <div class="imagenHotel">
                     <img src="https://media.staticontent.com/media/pictures/425d2dec-5bb3-46cb-9b22-f1d82fc81952/853x0?op=NONE&enlarge=false&gravity=ce_0_0&quality=80&dpr=1" alt="">
                 </div>
-                <div class="descripcion">
+                <div class="descripcionHot">
                     <h2 class="NombreD">Papagayo Cotopaxi</h2>
                     <p class="parrafoF">Habitación Doble Estándar con Vista a la Montaña 4 noches, 2 personas: USD 359</p>
                     <h4 class="descriptionP"> Machachi, Ecuador</h4>

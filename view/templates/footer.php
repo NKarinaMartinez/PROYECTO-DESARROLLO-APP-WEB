@@ -45,5 +45,6 @@
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/ebf5c668f2.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/validacionD.js"></script>
 </body>
 </html>

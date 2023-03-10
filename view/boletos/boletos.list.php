@@ -13,7 +13,7 @@ require_once HEADER;
                 <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i>Buscar</button>
             </form>       
         </div>
-        <div class="sub-fila2 d-flex flex-column align-items-end">
+        <div class="sub-fila2 d-flex">
             <a href="index.php?c=boletos&f=view_new" class="btn-new"> 
                 <button type="button" class="btn btn-primary">
                     <i class="fas fa-plus"></i> Agregar</button>
@@ -21,12 +21,13 @@ require_once HEADER;
         </div>
     </div>
     <!-- tabla de datos -->
-    <div class="table-responsive mt-2">
+    <div class="table-responsive">
         <table class="table table-striped table-bordered">
             <thead class="thead-dark">
                 <th>Nombre <i class="fa-sharp fa-solid fa-circle-chevron-down"></i></th>
                 <th>Categoría <i class="fa-sharp fa-solid fa-circle-chevron-down"></i></th>
                 <th>Precio <i class="fa-sharp fa-solid fa-circle-chevron-down"></i></th>
+                <th>Guía turístico <i class="fa-sharp fa-solid fa-circle-chevron-down"></i></th>
                 <th>Estado <i class="fa-sharp fa-solid fa-circle-chevron-down"></i></th>
                 <th>Acciones <i class="fa-sharp fa-solid fa-circle-chevron-down"></i></th>
             </thead>
@@ -38,6 +39,7 @@ require_once HEADER;
                     <td><?php echo $fila['bol_nombre'];?></td>
                     <td><?php echo $fila['cat_nombre'];?></td>
                     <td><?php echo $fila['bol_precio'];?></td>
+                    <td><?php echo $fila['bol_guia'];?></td>
                     <td><?php echo $fila['bol_estado'];?></td>
                     <td>
                         <a class="btn btn-primary" 

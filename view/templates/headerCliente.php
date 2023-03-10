@@ -20,6 +20,8 @@
         <a href="index.php?c=index&f=index&p=homeViewCliente" class="nav-link">Inicio</a>
         <a href="index.php?c=index&f=index&p=destino" class="nav-link">Destino</a>
         <a href="index.php?c=index&f=index&p=hospedaje" class="nav-link">Hospedaje</a>
+        <a href="index.php?c=index&f=index&p=FormDestino" class="nav-link">Comprar</a>
+        <a href="index.php?c=index&f=index&p=FormEncuesta" class="nav-link">Encuesta</a>
         <a href="#" class="nav-login"><i class="fa-solid fa-user"></i></a>
     </nav>
 </div>

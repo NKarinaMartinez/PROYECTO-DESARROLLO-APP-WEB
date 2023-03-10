@@ -5,7 +5,7 @@ require_once HEADER;
 
 <div class="container">
 <h2> <?php echo $titulo?></h2>
-    <div class="row">
+    <div class="card card-body">
     
         <form action="index.php?c=hotel&f=edit" method="POST" name="formProdNuevo" id="formProdNuevo">
         
@@ -13,7 +13,7 @@ require_once HEADER;
             <div class="form-row">
                <div class="form-group col-sm-6 col-new">
                     <label for="nomb">Nombre</label>
-                    <input type="text" name="nomb" id="nombre" value="<?php echo $hot['H_nombre']; ?>" class="form-control" placeholder="nombre hotel" style="width: 880px" required>
+                    <input type="text" name="nomb" id="nombre" value="<?php echo $hot['H_nombre']; ?>" class="form-control" placeholder="nombre hotel" required>
                 </div>
 
                 <div class="form-group col-sm-6 col-new">

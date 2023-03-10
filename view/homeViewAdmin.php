@@ -64,7 +64,7 @@ require_once HEADER;
 </section>
 
 <br><br><br>
-<section>
+<section  class="contenedor-info">
 	<div class="mas-info">
 		<h2 style="color: #ffffff;">¡Queremos saber de ti!</h2>
 		<p>Llena una encuesta sencilla acerca de tus viajes y podrías ganar premios</p>
