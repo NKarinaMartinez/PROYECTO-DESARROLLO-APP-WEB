@@ -300,7 +300,7 @@ font-size: 2rem;
     font-size: 20px;
 } 
 
-.mas-inf{
+.mas-info{
 width: 60%;
 height: 160px;
 background-color: rgb(240, 103, 23);
@@ -544,4 +544,123 @@ td>.btn-danger{
 .btn-ver-mas:hover, .btn-ver-mas:focus, .btn-ver-mas:active{
     box-shadow: 0 0 15px rgb(32, 104, 240, 0.5);
     transform: scale(1.1);
+}
+
+
+/*Parte de Hoteleria*/
+.container_H, .container_R, .container_Rec{
+    position: relative;
+    margin: 50px 200px;
+}
+
+.container_H::after{
+    content: "Hoteles";
+    font-size: 3rem;
+    color: white;
+    background-color: #5b54667a;
+    position: absolute ;
+    inset: 0;
+    display: grid;
+    place-items: center;
+}
+
+.container_R::after{
+    content: "Residenciales";
+    font-size: 3rem;
+    color: white;
+    background-color: #5b54667a;
+    position: absolute ;
+    inset: 0;
+    display: grid;
+    place-items: center;
+}
+
+.container_Rec::after{
+    content: "Recomendaciones";
+    font-size: 3rem;
+    color: white;
+    background-color: #5b54667a;
+    position: absolute ;
+    inset: 0;
+    display: grid;
+    place-items: center;
+}
+
+.Hoteles{
+    text-align: center;
+}
+.Hotel{
+    height: 350px;
+    width: 360px;
+    display: inline-table;
+    margin: 30px;
+}
+
+.Residenciales{
+    text-align: center;
+}
+.Residencia{
+    height: 350px;
+    width: 360px;
+    display: inline-table;
+    margin: 30px;
+}
+
+.imagen img{
+    width: 100%;
+    height: 100%;
+}
+
+.img-f img{
+    width: 100%;
+    height: 100%;
+}
+
+.imagenHotel{
+    width: 340px;
+    height: 250px;
+}
+
+.descripcion{
+    height: 160px;
+    width: 330px;
+    padding: 5px;
+    box-shadow: 0px 10px 23px -8px rgb(0 0 0 / 30%);
+}
+
+.NombreD{
+    color: rgb(41, 41, 41);
+    font-size: 18px;
+}
+
+.parrafoF{
+    padding: 4px;
+    font-size: 15px;
+}
+
+.descriptionP{
+    color: rgba(0, 0, 0, 0.836);
+    padding: 2px;
+    font-size: 12px;
+}
+
+.articleFinal{
+    position: relative;
+    margin: 30px 130px;
+}
+
+.articleFinal h2{
+    color: rgb(46, 46, 116);
+    text-align: center;
+    padding: 5px;
+    font-size: 2rem;
+}
+
+.articleFinal p, li{
+    padding: 2px;
+    font-size: 16px;
+}
+
+.mas-infor{
+    text-align: center;
 }
