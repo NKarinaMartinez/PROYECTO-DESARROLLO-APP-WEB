@@ -7,13 +7,13 @@ require_once HEADER;
     <h2 class="tituloB"> <?php echo $titulo?></h2>
     <!-- fila de busqueda y boton nuevo -->
     <div class="fila">
-        <div class="col-sm-6 sub-fila1">
+        <div class="sub-fila1">
             <form action="index.php?c=boletos&f=search" method="POST" class="search-btn">
                 <input type="text" name="b" id="busqueda"  placeholder="buscar..."/>
                 <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i>Buscar</button>
             </form>       
         </div>
-        <div class="col-sm-6 sub-fila2 d-flex flex-column align-items-end">
+        <div class="sub-fila2 d-flex flex-column align-items-end">
             <a href="index.php?c=boletos&f=view_new" class="btn-new"> 
                 <button type="button" class="btn btn-primary">
                     <i class="fas fa-plus"></i> Agregar</button>

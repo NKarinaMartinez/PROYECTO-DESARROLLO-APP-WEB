@@ -170,6 +170,24 @@ header h1{
 .nav-link:nth-child(4){
     margin-left: 50px;
 }
+/*Contenido del nav*/
+.nav-login{
+    width: 45px;
+    height: 45px;
+    margin-left: 500px;
+    background: rgb(12, 49, 117);
+    border-radius: 50%;
+    margin-top: 4px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.nav-login > i{
+    font-size: 25px;
+    color: #f8f8f8;
+    margin: auto;
+}
+
 
 /*Footer*/
 footer{
@@ -216,26 +234,8 @@ img{
     display: flex;
 }
 
-/*Contenido del nav*/
-.nav-login{
-    width: 45px;
-    height: 45px;
-    margin-left: 500px;
-    background: rgb(12, 49, 117);
-    border-radius: 50%;
-    margin-top: 4px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-.nav-login > i{
-    font-size: 25px;
-    color: #f8f8f8;
-    margin: auto;
-}
 
-
-/*Contenido del Home*/
+/*Contenido del homeViewAdmin y homeViewCliente*/
 .contenedor {
     width: 100%;
     padding-right: 15px;
@@ -325,6 +325,7 @@ text-align: center;
     cursor: pointer;
 }
 
+
 /*Input*/
 .container{
     width:100%;
@@ -349,7 +350,7 @@ text-align: center;
     margin-left:auto;
 }
 
-/**/
+/*Caja de busqueda para destino y hospedaje*/
 .tituloB{
     text-align: center;
 }
