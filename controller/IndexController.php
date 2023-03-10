@@ -8,7 +8,7 @@ class IndexController {
             require_once 'view/estaticas/'.$page.'.php';
         }else{
             
-          require_once 'view/homeView.php'; //mostrando la vista de home de la aplicacion
+            require_once 'view/viewLogin.php'; //mostrando la vista de home de la aplicacion
         }
     }
   
