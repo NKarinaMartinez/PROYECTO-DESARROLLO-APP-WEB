@@ -51,12 +51,16 @@ class UserController{
             echo 'El usuario o contraseña no existe';
         }
 
+    }
+
+    public function cerrar_sesion(){
         if(isset($_POST['cerrar_sesion'])){
             session_unset(); 
             // destroy the session 
             session_destroy(); 
+            
         }
-
+        require_once 'view/viewLogin.php';
     }
 }
 

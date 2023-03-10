@@ -16,12 +16,19 @@
     <header>
         <h1>DreamTravel</h1>
     </header>
-    <nav class="nav1">
+    <div class="nav1">
         <a href="index.php?c=index&f=index&p=homeViewAdmin" class="nav-link">Inicio</a>
         <a href="index.php?c=boletos&f=index" class="nav-link">Destino</a>
         <a href="index.php?c=hotel&f=index" class="nav-link">Hospedaje</a>
-        <a href="#" class="nav-login"><i class="fa-solid fa-user"></i></a>
-    </nav>
+    </div>
+    <div class="logout">
+        <div class="ambosA">
+            <a class="claseA colorCS" href="index.php?c=user&f=cerrar_sesion">Cerrar session</a>
+        </div>
+        <div class="ambosA">
+            <a class="nav-login claseA" href="#" ><i class="fa-solid fa-user"></i></a>
+        </div>
+    </div>
 </div>
 
 

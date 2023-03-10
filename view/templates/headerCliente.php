@@ -16,13 +16,20 @@
     <header>
         <h1>DreamTravel</h1>
     </header>
-    <nav class="nav1">
+    <div class="nav1">
         <a href="index.php?c=index&f=index&p=homeViewCliente" class="nav-link">Inicio</a>
         <a href="index.php?c=index&f=index&p=destino" class="nav-link">Destino</a>
         <a href="index.php?c=index&f=index&p=hospedaje" class="nav-link">Hospedaje</a>
         <a href="index.php?c=index&f=index&p=FormDestino" class="nav-link">Comprar</a>
         <a href="index.php?c=index&f=index&p=FormEncuesta" class="nav-link">Encuesta</a>
-        <a href="#" class="nav-login"><i class="fa-solid fa-user"></i></a>
-    </nav>
+    </div>
+    <div class="logout">
+        <div class="ambosA">
+            <a class="claseA colorCS" href="index.php?c=user&f=cerrar_sesion">Cerrar session</a>
+        </div>
+        <div class="ambosA">
+            <a class="nav-login claseA" href="#" ><i class="fa-solid fa-user"></i></a>
+        </div>
+    </div>
 </div>
 

@@ -1,7 +1,7 @@
 <?php
 //autor:Nicole Martínez Ochoa
 class Boleto{
-    private $id, $nombre, $precio, $idCategoria, $estado, $descripcion, $usuario, $fechaActualizacion;
+    private $id, $nombre, $precio, $idCategoria, $estado, $guia, $descripcion, $usuario, $fechaActualizacion;
 
     function __construct(){
 
@@ -45,6 +45,14 @@ class Boleto{
 
     function setEstado($estado){
         $this->estado = $estado;
+    }
+
+    function getGuia(){
+        return $this->guia;
+    }
+
+    function setGuia($guia){
+        $this->guia = $guia;
     }
 
     function getDescripcion(){

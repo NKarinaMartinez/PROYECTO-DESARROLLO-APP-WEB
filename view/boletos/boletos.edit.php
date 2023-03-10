@@ -34,10 +34,16 @@ require_once HEADER;
 
                     </select>
                 </div>
+
                 <div class="form-group col-sm-6 col-new">
                     <label for="precio">Precio</label>
                     <input type="text" name="precio" id="precio" value="<?php echo $bol['bol_precio']; ?>" class="form-control" placeholder="precio boleto" required>
-                </div>          
+                </div>   
+                
+                <div class="form-group col-sm-6 col-new">
+                    <label for="guia">Asignar Guia</label>
+                    <input type="text" name="guia" id="guia" value="<?php echo $bol['bol_guia']; ?>" class="form-control" placeholder="SI / NO" required>
+                </div>   
 
                 <div class="form-group col-sm-12 col-new">
                     <input type="checkbox" id="estado" value="<?php echo $bol['bol_estado']?>" 
@@ -45,6 +51,7 @@ require_once HEADER;
                     
                     <label for="estado">Activo</label>
                 </div>
+                
                 <div class="form-group mx-auto">
                     <button type="submit" class="btn btn-primary"
                      onclick="if (!confirm('Esta seguro de modificar el boleto?')) return false;" >Guardar</button>

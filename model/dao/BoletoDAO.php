@@ -42,8 +42,8 @@ class BoletoDAO{
         try {
             //sentencia sql
             $sql = "INSERT INTO boleto (bol_nombre, bol_estado, bol_precio, 
-            bol_idCategoria, bol_usuarioActualizacion, bol_fechaActualizacion) VALUES 
-            (:nom, :estado, :precio, :idCat, :usu, :fecha)";
+            bol_idCategoria, bol_guia, bol_usuarioActualizacion, bol_fechaActualizacion) VALUES 
+            (:nom, :estado, :precio, :idCat, :guia, :usu, :fecha)";
             //bind parameters
             $sentencia = $this->con->prepare($sql);
             $data = [
@@ -51,6 +51,7 @@ class BoletoDAO{
                 'estado' => $bol->getEstado(),
                 'precio' => $bol->getPrecio(),
                 'idCat' => $bol->getIdCategoria(),
+                'guia' => $bol->getGuia(),
                 'usu' => $bol->getUsuario(),
                 'fecha' => $bol->getFechaActualizacion()
             ];
@@ -71,8 +72,8 @@ class BoletoDAO{
         try{
             //sentencia sql
             $sql = "UPDATE boleto SET bol_nombre=:nom," .
-                    "bol_estado=:estado,bol_precio=:precio,bol_idCategoria=:idCat,bol_usuarioActualizacion=:usu," .
-                    "bol_fechaActualizacion=:fecha WHERE bol_id=:id";
+                    "bol_estado=:estado,bol_precio=:precio,bol_idCategoria=:idCat,bol_guia=:guia,".
+                    "bol_usuarioActualizacion=:usu,bol_fechaActualizacion=:fecha WHERE bol_id=:id";
             //bind parameters
             $sentencia = $this->con->prepare($sql);
             $data = [
@@ -80,6 +81,7 @@ class BoletoDAO{
                 'estado' =>  $bol->getEstado(),
                 'precio' =>  $bol->getPrecio(),
                 'idCat' =>  $bol->getIdCategoria(),
+                'guia' => $bol->getGuia(),
                 'usu' =>  $bol->getUsuario(),
                 'fecha' =>  $bol->getFechaActualizacion(),
                 'id' =>  $bol->getId()

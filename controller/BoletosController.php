@@ -35,7 +35,7 @@ class BoletosController {
         //comunicarse con el modelo
         $modeloCat = new CategoriasDAO();
         $categorias = $modeloCat->selectAll();
-
+        
         // comunicarse con la vista
         $titulo="Nuevo Boleto";
         require_once 'view/boletos/boletos.'.'nuevo.php';
@@ -54,6 +54,7 @@ class BoletosController {
             $bol->setIdCategoria(htmlentities($_POST['categoria']));
             $estado = (isset($_POST['estado'])) ? 1 : 0; // ejemplo de dato no obligatorio
             $bol->setEstado($estado);
+            $bol->setGuia(htmlentities($_POST['guia']));
             $bol->setUsuario('usuario'); //$_SESSION['usuario'];
             $fechaActual = new DateTime('NOW');
             $bol->setFechaActualizacion($fechaActual->format('Y-m-d H:i:s'));
@@ -129,6 +130,7 @@ class BoletosController {
             $bol->setIdCategoria(htmlentities($_POST['categoria']));
             $estado = (isset($_POST['estado'])) ? 1 : 0; // un dato no requerido
             $bol->setEstado($estado);
+            $bol->setGuia(htmlentities($_POST['guia']));
             $bol->setUsuario('usuario'); //$_SESSION['usuario'];
             $fechaActual = new DateTime('NOW');
             $bol->setFechaActualizacion($fechaActual->format('Y-m-d H:i:s'));
