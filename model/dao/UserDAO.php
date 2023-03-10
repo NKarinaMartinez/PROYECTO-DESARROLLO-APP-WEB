@@ -1,4 +1,5 @@
 <?php
+//autor:Nicole Martínez Ochoa
 require_once 'config/conexion.php';
 require_once 'model/dto/User.php';
 
@@ -53,10 +54,6 @@ class UserDAO{
             $u->setUsername() = $currentUser['username'];
         }*/
     }
-
-    //public function getNombre(){
-        //return $this->nombre;
-    //}
 }
 
 

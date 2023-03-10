@@ -1,4 +1,6 @@
-<?php require_once HEADERCLIENTE; ?>
+<?php 
+//autor:Nicole Martínez Ochoa
+require_once HEADERCLIENTE; ?>
 
 <div class="contenedor">
 	<div class="centrar">
