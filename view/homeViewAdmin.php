@@ -17,9 +17,9 @@ require_once HEADER;
 	</div>			
 </div>
 		
-<h2 class="tit1"> ¡Es hora de comenzar tu viaje! </h2><br>
-<p class="tit2"> Happy Travels - Somos una compañía especializada en turismo receptivo y emisivo; que inicio sus actividades en la cuidad de Guayaquil, en enero del año 2003. </p>
-<p class="tit2"> Agencia y Operador turístico	¡Hacemos que vivas experiencias inolvidables </p>
+<h2 class="titu1"> ¡Es hora de comenzar tu viaje! </h2><br>
+<p class="titu2"> Happy Travels - Somos una compañía especializada en turismo receptivo y emisivo; que inicio sus actividades en la cuidad de Guayaquil, en enero del año 2003. </p>
+<p class="titu2"> Agencia y Operador turístico	¡Hacemos que vivas experiencias inolvidables </p>
 <br><br>
 
 <section>					
@@ -65,10 +65,10 @@ require_once HEADER;
 
 <br><br><br>
 <section>
-	<div class="mas-inf">
+	<div class="mas-info">
 		<h2 style="color: #ffffff;">¡Queremos saber de ti!</h2>
 		<p>Llena una encuesta sencilla acerca de tus viajes y podrías ganar premios</p>
-		<button onclick="location.href='FormEncuesta.html'">Clic Aquí</button>
+		<button class="btn-ver-mas" onclick="location.href='FormEncuesta.html'">Clic Aquí</button>
 	</div>
 </section>
 

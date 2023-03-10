@@ -3,9 +3,145 @@
     margin: 0;
     padding: 0;
 }
+
 a{
     text-decoration: none;
 }
+
+/*Login de la App*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: #f2f2f2;
+  /* background: linear-gradient(-135deg, #c850c0, #4158d0); */
+}
+::selection{
+  background: #4158d0;
+  color: #fff;
+}
+.wrapper{
+  width: 380px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+}
+.wrapper .title{
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+  user-select: none;
+  border-radius: 15px 15px 0 0;
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+}
+.wrapper form{
+  padding: 10px 30px 50px 30px;
+}
+.wrapper form .field{
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+.wrapper form .field input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 17px;
+  padding-left: 20px;
+  border: 1px solid lightgrey;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+.wrapper form .field input:focus,
+form .field input:valid{
+  border-color: #4158d0;
+}
+.wrapper form .field label{
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  color: #999999;
+  font-weight: 400;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+form .field input:focus ~ label,
+form .field input:valid ~ label{
+  top: 0%;
+  font-size: 16px;
+  color: #4158d0;
+  background: #fff;
+  transform: translateY(-50%);
+}
+form .content{
+  display: flex;
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  align-items: center;
+  justify-content: space-around;
+}
+form .content .checkbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form .content input{
+  width: 15px;
+  height: 15px;
+  background: red;
+}
+form .content label{
+  color: #262626;
+  user-select: none;
+  padding-left: 5px;
+}
+form .content .pass-link{
+  color: "";
+}
+form .field input[type="submit"]{
+  color: #fff;
+  border: none;
+  padding-left: 0;
+  margin-top: -10px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  transition: all 0.3s ease;
+}
+form .field input[type="submit"]:active{
+  transform: scale(0.95);
+}
+form .signup-link{
+  color: #262626;
+  margin-top: 20px;
+  text-align: center;
+}
+form .pass-link a,
+form .signup-link a{
+  color: #4158d0;
+  text-decoration: none;
+}
+form .pass-link a:hover,
+form .signup-link a:hover{
+  text-decoration: underline;
+}
+
+
 /*Barra de navegación*/
 header h1{
     color: rgb(245, 59, 59);
@@ -84,7 +220,7 @@ img{
 .nav-login{
     width: 45px;
     height: 45px;
-    margin-left: 730px;
+    margin-left: 500px;
     background: rgb(12, 49, 117);
     border-radius: 50%;
     margin-top: 4px;
@@ -136,10 +272,6 @@ img{
     align-items: center;
 }
 
-img{
-    height: 100%;
-    width: 100%;
-}
 
 .img_footer{
     width: 30px;
@@ -153,7 +285,7 @@ img{
     align-items: center;
 }
 
-.tit1{
+.titu1{
 position: relative;
 color: rgb(46, 46, 116);
 text-align: center;
@@ -161,7 +293,7 @@ margin-top: 90px;
 font-size: 2rem;
 }
 
-.tit2{
+.titu2{
     position: relative;
     color: rgb(46, 46, 116);
     text-align: center;
@@ -298,16 +430,16 @@ td>.btn-danger{
 /*Nuevo Boleto*/
 .card{
     width: 80%;
-    height: 230px;
+    height: 260px;
     border: 0.1px solid #c0c0c0;
     border-radius: 10px;
-    padding: 18px;
+    padding: 15px;
 }
 
 .form-control{
     padding: 0px 0px 0px 10px;
     height: 32px;
-    width: 400px;
+    width:380px;
     border-radius: 30px;
     border: 0.1px solid #c0c0c0;
 }
@@ -338,3 +470,78 @@ td>.btn-danger{
     margin: 0 15px;
 }
 
+/*Parte de la pagina estatica Destinos*/
+.video-p{
+    text-align: center;
+    margin: 30px;
+}
+.video-p p{
+    margin-top: 10px;
+    color: rgb(11, 171, 219);
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+}
+#tit-1{
+    text-align: center;
+    padding: 20px;
+}
+#tit-2{
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+}
+.pack-nac{
+    text-align: center;
+}
+.pack{
+    height: 350px;
+    width: 360px;
+    display: inline-block;
+    margin: 40px;
+}
+.imagenDes{
+    width: 360px;
+    height: 250px;
+}
+.descripcion{
+    height: 90px;
+    width: 350px;
+    padding: 5px;
+    box-shadow: 0px 10px 23px -8px rgb(0 0 0 / 30%);
+}
+.nomBoleto{
+    color: rgb(41, 41, 41);
+    font-size: 18px;
+}
+.pack-int{
+    text-align: center;
+}
+.mas-info{
+    width: 60%;
+    height: 80px;
+    background-color: rgb(240, 103, 23);
+    margin: auto;
+    padding: 80px 60px;
+    border-radius: 25px;
+    text-align: center;
+}
+.mas-info h4, .mas-info p{
+    color: #ffff;
+    margin: 5px;
+}
+.mas-info button{
+    width: 180px;
+    height: 40px;
+    border-style: none;
+    border-radius: 5px;
+    background-color: rgb(32, 104, 240);
+    text-align: center;
+    color: #ffffff;
+    margin: 20px;
+    cursor: pointer;
+}
+.btn-ver-mas:hover, .btn-ver-mas:focus, .btn-ver-mas:active{
+    box-shadow: 0 0 15px rgb(32, 104, 240, 0.5);
+    transform: scale(1.1);
+}

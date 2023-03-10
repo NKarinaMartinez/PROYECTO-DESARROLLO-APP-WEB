@@ -24,8 +24,7 @@ class UserDAO{
             $_SESSION['rol'] = $rol;
             switch($rol){
                 case 1:
-                    header('location:view/homeViewAdmin.php');
-                    //require_once 'view/homeViewAdmin.php';
+                    require_once 'view/homeViewAdmin.php';
                 break;
 
                 case 2:
@@ -33,8 +32,7 @@ class UserDAO{
                 break;
 
                 case 3:
-                    header('location:view/homeViewAdmin.php');
-                    //require_once 'view/homeViewAdmin.php';
+                    require_once 'view/homeViewCliente.php';
                 break;
 
                 default:

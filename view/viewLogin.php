@@ -1,27 +1,32 @@
 <?php require_once HEADERLOGIN; ?>
 
-<div id="menu">
-    <ul>
-        <li><a href="#" class="active">Iniciar Sesión</a></li>
-    </ul>
-</div>
-<div id="formularios">
-    <form action="index.php?c=user&f=iniciar_sesion" id="form_session" method="post">
-
-        <p>Nombre de Usuario:</p>
-        <div class="field-container">
-            <div class="fasfa"><i class="fa-solid fa-user" aria-hidden="true"></i></div>
-            <input name="username" type="text" class="field" placeholder="userExample"> <br/>
+<div class="wrapper">
+    <div class="title">
+        Formulario Login
+    </div>
+    <form action="index.php?c=user&f=iniciar_sesion" method="POST">
+        <div class="field">
+            <input name="username" type="text" required>
+            <label>Nombre de Usuario</label>
         </div>
-
-        <p>Contraseña:</p>
-        <div class="field-container">
-            <div class="fasfa"><i class="fa-solid fa-lock" aria-hidden="true"></i></div>
-            <input name="password" type="password" class="field" placeholder="*******"> <br/>
+        <div class="field">
+            <input name="password" type="password" required>
+            <label>Contraseña</label>
         </div>
-        <p class="center-content">
-            <input type="submit" class="btn btn-green" value="Iniciar sesión" style="color: #fff;"> 
-        </p>
-    </form>	
-
+        <div class="content">
+            <div class="checkbox">
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me">Remember me</label>
+            </div>
+            <div class="pass-link">
+                <a href="#">Forgot password?</a>
+            </div>
+        </div>
+        <div class="field">
+            <input type="submit" value="Iniciar sesión">
+        </div>
+        <div class="signup-link">
+            Not a member? <a href="#">Signup now</a>
+        </div>
+    </form>
 </div>
