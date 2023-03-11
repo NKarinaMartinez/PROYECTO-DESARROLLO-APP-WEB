@@ -1,4 +1,6 @@
-<?php require_once HEADERCLIENTE; ?>
+<?php 
+//autor:Lesley Caicedo Guaman 
+require_once HEADERCLIENTE; ?>
 
     <p class="titu1 parrafoF"><strong>Con DreamTravel hospédate en los mejores Hoteles de Mundo</strong></p>
     <p class="titu2 parrafoF">¡Vive unas vacaciones increíbles!</p>

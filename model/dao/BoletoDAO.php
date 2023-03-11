@@ -109,9 +109,9 @@ class BoletoDAO{
             //bind parameters
             $sentencia = $this->con->prepare($sql);
             $data = [
-                'usu' =>  $prod->getUsuario(),
-                'fecha' =>  $prod->getFechaActualizacion(),
-                'id' =>  $prod->getId()
+                'usu' =>  $bol->getUsuario(),
+                'fecha' =>  $bol->getFechaActualizacion(),
+                'id' =>  $bol->getId()
             ];
             //execute
             $sentencia->execute($data);

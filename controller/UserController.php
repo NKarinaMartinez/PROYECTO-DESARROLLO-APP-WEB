@@ -41,10 +41,10 @@ class UserController{
                 echo 'Correcto';
                 $userSession->setCurrentUser($userE);
                 $user->setUser($userE);
-                //include_once 'view/homeViewAdmin.php';
+                include_once 'view/homeViewAdmin.php';
             }else{
                 //echo "No existe el usuario";
-                $errorLogin = "Nombre de usuario y/o password incorrecto";
+                echo 'El usuario o contraseña no existe';
                 //include_once 'view/viewLogin.php';
             }
         }else{
@@ -57,7 +57,7 @@ class UserController{
         if(isset($_POST['cerrar_sesion'])){
             session_unset(); 
             // destroy the session 
-            session_destroy(); 
+            session_destroy();
             
         }
         require_once 'view/viewLogin.php';

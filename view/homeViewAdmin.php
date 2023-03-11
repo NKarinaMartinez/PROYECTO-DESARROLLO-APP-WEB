@@ -1,7 +1,5 @@
-<?php 
-//autor:Nicole Martínez Ochoa
-require_once HEADER; 
-?>
+<!-- autor:Nicole Martínez Ochoa -->
+<?php require_once HEADER; ?>
 
 <div class="contenedor">
 	<div class="centrar">

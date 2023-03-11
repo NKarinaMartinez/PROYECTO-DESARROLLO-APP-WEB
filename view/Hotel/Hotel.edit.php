@@ -1,7 +1,5 @@
-<?php
-//autor:Lesley Caicedo Guaman 
-require_once HEADER; 
-?>
+<!-- autor:Lesley Caicedo Guaman -->
+<?php require_once HEADER; ?>
 
 <div class="container">
 <h2> <?php echo $titulo?></h2>

@@ -1,5 +1,5 @@
 <?php
-//autor:Nicole Martínez Ochoa
+//autor:
 require_once 'config/conexion.php';
 require_once 'model/dto/User.php';
 

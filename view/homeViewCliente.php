@@ -1,5 +1,4 @@
 <?php 
-//autor:Nicole Martínez Ochoa
 require_once HEADERCLIENTE; ?>
 
 <div class="contenedor">

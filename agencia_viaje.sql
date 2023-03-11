@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 10-03-2023 a las 22:41:24
+-- Tiempo de generación: 11-03-2023 a las 01:47:08
 -- Versión del servidor: 10.4.27-MariaDB
 -- Versión de PHP: 8.1.12
 
@@ -46,9 +46,12 @@ CREATE TABLE `boleto` (
 INSERT INTO `boleto` (`bol_id`, `bol_nombre`, `bol_precio`, `bol_estado`, `bol_idCategoria`, `bol_guia`, `bol_descripcion`, `bol_usuarioActualizacion`, `bol_fechaActualizacion`) VALUES
 (1, 'Campamento Vacacional Extremo', 29.99, 1, 1, 'NO', 'Experiencia emocionante de aventura y diversión en la naturaleza, ideal para jóvenes aventureros.', 'usuario', '2023-03-06 03:36:13'),
 (2, 'Huasquila Amazon Lodge - Napo', 35.99, 1, 2, 'SI', 'Eco-lodge sostenible en la selva amazónica con actividades únicas y alojamiento cómodo y acogedor.', 'usuario', '2023-03-07 21:45:13'),
-(3, 'Buceo Extremo', 20.8, 1, 2, 'NO', 'Los mejores sitios de buceo en la Isla Santa Cruz son bahía de Puerto Ayora.', 'usuario', '2023-03-08 23:53:47'),
+(3, 'Buceo Extremo', 30.4, 1, 1, 'SI', 'Los mejores sitios de buceo en la Isla Santa Cruz son bahía de Puerto Ayora.', 'usuario', '2023-03-11 01:41:10'),
 (4, 'Quito Cultural 3D-2N', 40, 1, 2, 'NO', 'Quito Cultural 3D-2N', 'usuario', '2023-03-09 02:08:27'),
-(5, 'Florecimiento de Guayacanes', 15.99, 1, 2, 'SI', 'Florecimiento de Guayacanes', 'usuario', '2023-03-09 02:08:27');
+(5, 'Florecimiento de Guayacanes', 15.99, 1, 2, 'SI', 'Florecimiento de Guayacanes', 'usuario', '2023-03-09 02:08:27'),
+(6, 'Land Tour Punta Cana', 345, 1, 3, 'NO', 'Land Tour Punta Cana, 5 días para disfrutar.', 'usuario', '2023-03-11 01:42:48'),
+(7, 'Egipto y Dubái', 560, 0, 3, 'SI', 'Egipto y Dubái, con gastos de hoteleria incluido.', '', '2023-03-11 00:55:09'),
+(8, 'Ecuador - Manab&iacute;', 45.5, 0, 2, 'NO', '', 'usuario', '2023-03-11 01:39:03');
 
 -- --------------------------------------------------------
 
@@ -139,9 +142,9 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `nombre`, `username`, `password`, `rol_id`) VALUES
-(1, 'Nicole', 'NicoleM', 'admin123', 1),
-(2, 'Dario', 'Dario1', 'Dario1', 2),
-(3, 'Andrea', 'Andrea1', 'Andrea1', 3);
+(1, 'Nicole', 'admin', 'admin', 1),
+(2, 'Dario', 'gerente', 'gerente', 2),
+(3, 'Andrea', 'cliente', 'cliente', 3);
 
 --
 -- Índices para tablas volcadas
@@ -187,7 +190,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `boleto`
 --
 ALTER TABLE `boleto`
-  MODIFY `bol_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `bol_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de la tabla `hoteles`

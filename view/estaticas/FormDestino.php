@@ -1,5 +1,5 @@
 <?php require_once HEADERCLIENTE; ?>
-<!-- Formulario de Destino -->
+
 <div class="ContPrincipal">
     <div class="tituloDD">
         <header>
